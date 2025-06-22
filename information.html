@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi"> <!-- Đổi ngôn ngữ sang tiếng Việt -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <title>Thông tin</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/information.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <script src="https://mcapi.us/scripts/minecraft.min.js"></script>
+    <script src="js/core.js"></script>
+    <script src="js/buttons.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="serverIp" onclick="copyIp()">
+            <p>Trạng thái máy chủ: <span class="serverStatus" id="serverStatus">...</span> Người chơi: <span class="playersOn" id="playersOn">0</span><span class="playersMax">/</span><span class="playersMax" id="playersMax">0</span></p>
+            <p>IP MÁY CHỦ » <span class="serverIpText" id="serverIpText">..</span></p>
+        </div>
+
+        <div class="bar"></div>
+
+        <div id="bannerTop" class="bannerTop">
+            <div class="logo">
+                <a href="./index.html"><img src="img/logo.png" alt="Logo máy chủ"></a>
+            </div>
+            <a href="./index.html"><p id="title"></p></a>
+        </div>
+
+        <div class="barTwo"></div>
+        <div class="clear"></div>
+
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Trang chủ</a></li>
+                    <li><a href="./news.html">Tin tức</a></li>
+                    <li><a style="color: white;" href="./information.html">Thông tin</a></li>
+                    <li><a href="./shop.html">Cửa hàng</a></li>
+                    <li><a href="./help.html">Hỗ trợ</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="article">
+            <p class="articleTitle">Thông tin máy chủ</p>
+
+            <p class="articleDescription">Chào mừng bạn đến với máy chủ MineChill! Đây là nơi bạn có thể khám phá thế giới Minecraft sinh tồn, tham gia cộng đồng vui nhộn, sự kiện hàng ngày, và hàng loạt tính năng độc đáo.</p>
+
+            <!-- Khối: Nội quy -->
+            <div class="infoblock">
+                <div class="barPurple"></div>
+                <div class="infoblockText">
+                    <p class="infobTitle">Nội quy</p>
+                    <p class="infobDescription">Tuân thủ các quy tắc để giữ cộng đồng văn minh và vui vẻ!</p>
+                    <p class="infobContent" id="content1">
+                        Vui lòng không spam, chửi tục, gian lận hoặc phá hoại công trình của người chơi khác. Tôn trọng người chơi và quản trị viên. Vi phạm sẽ bị xử lý theo mức độ nghiêm trọng.
+                        <img style="height: 200px;" src="https://i.pinimg.com/originals/d7/70/5b/d7705b4b6c3dbf719523b248ef646a0f.jpg" alt="Rule Image">
+                    </p>
+                </div>
+                <input class="infoblockButtonPurple" type="button" value="+" onclick="openContent1()" id="button1">
+            </div>
+
+            <!-- Khối: PVP -->
+            <div class="infoblock">
+                <div class="barRed"></div>
+                <div class="infoblockText">
+                    <p class="infobTitle">Chiến đấu (PvP)</p>
+                    <p class="infobDescription">Bạn có thể chiến đấu ở một số khu vực cho phép PvP.</p>
+                    <p class="infobContent" id="content2">
+                        PvP là phần thú vị của server. Hãy chắc chắn bạn đã chuẩn bị kỹ lưỡng trước khi tham gia! Không được sử dụng hack hay tool hỗ trợ gian lận trong các trận đấu.
+                    </p>
+                </div>
+                <input class="infoblockButtonRed" type="button" value="+" onclick="openContent2()" id="button2">
+            </div>
+
+            <!-- Khối: Kinh tế -->
+            <div class="infoblock">
+                <div class="barGreen"></div>
+                <div class="infoblockText">
+                    <p class="infobTitle">Hệ thống kinh tế</p>
+                    <p class="infobDescription">Tham gia giao dịch, làm giàu và trở thành thương nhân đại tài!</p>
+                    <p class="infobContent" id="content3">
+                        Kiếm tiền qua việc bán vật phẩm, cày ruộng, đi mine hoặc tham gia sự kiện. Tiền có thể dùng để mua đồ, thuê đất, hoặc nâng cấp tiện ích trong máy chủ.
+                    </p>
+                </div>
+                <input class="infoblockButtonGreen" type="button" value="+" onclick="openContent3()" id="button3">
+            </div>
+
+            <!-- Khối: Nhà ở -->
+            <div class="infoblock">
+                <div class="barYellow"></div>
+                <div class="infoblockText">
+                    <p class="infobTitle">Hệ thống nhà ở</p>
+                    <p class="infobDescription">Xây dựng nơi ở an toàn và tiện nghi cho bản thân bạn!</p>
+                    <p class="infobContent" id="content4">
+                        Bạn có thể mua vùng đất, xây dựng nhà, trang trí, bảo vệ tài sản khỏi kẻ xấu. Có thể chia sẻ quyền sử dụng đất cho bạn bè hoặc người thân trong bang hội.
+                    </p>
+                </div>
+                <input class="infoblockButtonYellow" type="button" value="+" onclick="openContent4()" id="button4">
+            </div>
+
+            <p class="articleDescription">Tham gia ngay hôm nay để cùng bạn bè tạo nên cộng đồng Minecraft thân thiện, sáng tạo và đầy trải nghiệm hấp dẫn!</p>
+
+            <p class="articleDescription">Đừng quên đọc kỹ nội dung trên để hiểu rõ cách hoạt động của máy chủ. Cùng nhau xây dựng một môi trường chơi game tích cực, công bằng và thú vị.</p>
+
+            <p class="articleTitle">Video hướng dẫn</p>
+
+            <div class="tutorialVideo">
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/l6IcWZHico8" title="Hướng dẫn chơi Minecraft" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3SDJljtLa84" title="Mẹo sinh tồn Minecraft" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="extra">
+            <iframe src="https://discord.com/widget?id=620346870748676137&theme=dark" width="100%" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
+
+        <div class="clear"></div>
+        <footer>
+            <p>© Bản quyền thuộc về chúng tôi.</p>
+            <p>Website được phát triển bởi <a href="https://github.com/Tiagox42"><strong>Tiagox42</strong></a> / Doritoz#2416</p>
+        </footer>
+    </div>
+</body>
+
+</html>

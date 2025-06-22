@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <title>Cửa hàng</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <script src="https://mcapi.us/scripts/minecraft.min.js"></script>
+    <script src="js/core.js"></script>
+    <script src="js/shop.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="serverIp" onclick="copyIp()">
+            <p>Trạng thái máy chủ: <span class="serverStatus" id="serverStatus">...</span> Người chơi: <span class="playersOn" id="playersOn">0</span><span class="playersMax">/</span><span class="playersMax" id="playersMax">0</span></p>
+            <p>IP MÁY CHỦ » <span class="serverIpText" id="serverIpText">..</span></p>
+        </div>
+
+        <div class="bar"></div>
+
+        <div id="bannerTop" class="bannerTop">
+            <div class="logo">
+                <a href="./index.html"><img src="img/logo.png" alt="Logo máy chủ"></a>
+            </div>
+            <a href="./index.html"><p id="title"></p></a>
+        </div>
+
+        <div class="barTwo"></div>
+        <div class="clear"></div>
+
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Trang chủ</a></li>
+                    <li><a href="./news.html">Tin tức</a></li>
+                    <li><a href="./information.html">Thông tin</a></li>
+                    <li><a style="color: white;" href="./shop.html">Cửa hàng</a></li>
+                    <li><a href="./help.html">Hỗ trợ</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="article">
+
+            <h1 class="articleTitle">CỬA HÀNG MÁY CHỦ</h1>
+
+            <p class="articleDescription">
+                Mua các gói VIP và vật phẩm đặc biệt để nâng cấp trải nghiệm chơi game của bạn!
+                Các gói dưới đây đều đi kèm quyền lợi hấp dẫn và hỗ trợ máy chủ hoạt động ổn định hơn.
+            </p>
+
+            <div class="frames">
+                <!-- VIP 1 -->
+                <div class="itemframe">
+                    <div class="itemframeTitle">VIP 1</div>
+                    <div class="itemframeImage">
+                        <img src="https://static.wikia.nocookie.net/minecraft_br_gamepedia/images/1/11/Tronco_de_Carvalho.png" alt="">
+                    </div>
+                    <div class="itemframeText">1x Kim cương, 2x Kim cương, 3x Thỏi vàng, 4x Cỏ.</div>
+                    <input class="itemframeButton" type="button" value="MUA NGAY" onclick="Vip1()">
+                </div>
+
+                <!-- VIP 2 -->
+                <div class="itemframe">
+                    <div class="itemframeTitle">VIP 2</div>
+                    <div class="itemframeImage">
+                        <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/48/Coal_Ore_JE5_BE4.png" alt="">
+                    </div>
+                    <div class="itemframeText">1x Kim cương, 2x Kim cương, 3x Thỏi vàng, 4x Cỏ.</div>
+                    <input class="itemframeButton" type="button" value="MUA NGAY" onclick="Vip2()">
+                </div>
+
+                <!-- VIP 3 -->
+                <div class="itemframe">
+                    <div class="itemframeTitle">VIP 3</div>
+                    <div class="itemframeImage">
+                        <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/1/19/Iron_Ore_JE6_BE4.png" alt="">
+                    </div>
+                    <div class="itemframeText">1x Kim cương, 2x Kim cương, 3x Thỏi vàng, 4x Cỏ.</div>
+                    <input class="itemframeButton" type="button" value="MUA NGAY" onclick="Vip3()">
+                </div>
+
+                <!-- VIP 4 -->
+                <div class="itemframe">
+                    <div class="itemframeTitle">VIP 4</div>
+                    <div class="itemframeImage">
+                        <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/1/18/Gold_Ore_JE7_BE4.png" alt="">
+                    </div>
+                    <div class="itemframeText">1x Kim cương, 2x Kim cương, 3x Thỏi vàng, 4x Cỏ.</div>
+                    <input class="itemframeButton" type="button" value="MUA NGAY" onclick="Vip4()">
+                </div>
+
+                <!-- VIP 5 -->
+                <div class="itemframe">
+                    <div class="itemframeTitle">VIP 5</div>
+                    <div class="itemframeImage">
+                        <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/a/a9/Emerald_Ore_JE4_BE3.png" alt="">
+                    </div>
+                    <div class="itemframeText">1x Kim cương, 2x Kim cương, 3x Thỏi vàng, 4x Cỏ.</div>
+                    <input class="itemframeButton" type="button" value="MUA NGAY" onclick="Vip5()">
+                </div>
+
+                <!-- VIP 6 -->
+                <div class="itemframe">
+                    <div class="itemframeTitle">VIP 6</div>
+                    <div class="itemframeImage">
+                        <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/29/Diamond_Ore_JE5_BE5.png" alt="">
+                    </div>
+                    <div class="itemframeText">1x Kim cương, 2x Kim cương, 3x Thỏi vàng, 4x Cỏ.</div>
+                    <input class="itemframeButton" type="button" value="MUA NGAY" onclick="Vip6()">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="extra">
+            <!-- Có thể thêm banner giảm giá hoặc thông báo thanh toán ở đây -->
+        </div>
+
+        <div class="clear"></div>
+        <footer>
+            <p>© Bản quyền thuộc về chúng tôi.</p>
+            <p>Website được phát triển bởi <a href="https://github.com/Tiagox42"><strong>Tiagox42</strong></a> / Doritoz#2416</p>
+        </footer>
+    </div>
+</body>
+
+</html>

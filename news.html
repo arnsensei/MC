@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="vi"> <!-- Đổi ngôn ngữ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <title>Tin tức</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/information.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <script src="https://mcapi.us/scripts/minecraft.min.js"></script>
+    <script src="js/core.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="serverIp" onclick="copyIp()">
+            <p>Trạng thái máy chủ: <span class="serverStatus" id="serverStatus">...</span> Người chơi: <span class="playersOn" id="playersOn">0</span><span class="playersMax">/</span><span class="playersMax" id="playersMax">0</span></p>
+            <p>IP MÁY CHỦ » <span class="serverIpText" id="serverIpText">..</span></p>
+        </div>
+
+        <div class="bar"></div>
+
+        <div id="bannerTop" class="bannerTop">
+            <div class="logo">
+                <a href="./index.html"><img src="img/logo.png" alt="Logo"></a>
+            </div>
+            <a href="./index.html"><p id="title"></p></a>
+        </div>
+
+        <div class="barTwo"></div>
+        <div class="clear"></div>
+
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Trang chủ</a></li>
+                    <li><a style="color: white;" href="./news.html">Tin tức</a></li>
+                    <li><a href="./information.html">Thông tin</a></li>
+                    <li><a href="./shop.html">Cửa hàng</a></li>
+                    <li><a href="./help.html">Hỗ trợ</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="clear"></div>
+
+        <div class="newsArticle">
+
+            <!-- Tin 1 -->
+            <div class="news">
+                <div class="newsTitle">
+                    <div class="newsIcon"><img src="img/gold.png" alt=""></div>
+                    <h1>KHUYẾN MÃI HALLOWEEN GIẢM 75%</h1>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="barTwo"></div>
+                <div class="newsDescription">
+                    <p>🎃 Sự kiện Halloween đã bắt đầu! Mọi vật phẩm trong cửa hàng đều đang được giảm giá lên tới 75%. Đây là cơ hội cực tốt để bạn nâng cấp trang bị, sở hữu skin độc quyền và tham gia các hoạt động đặc biệt!</p>
+                    <br>
+                    <p>🔥 Đừng bỏ lỡ cơ hội nhận được các vật phẩm giới hạn chỉ có trong dịp này. Sự kiện kéo dài đến hết ngày 31/10!</p>
+                    <br>
+                    <img src="https://image.freepik.com/free-vector/gradient-halloween-sale-illustration_52683-70638.jpg" alt="Halloween sale">
+                    <br>
+                    <p>Hãy truy cập cửa hàng ngay và săn ưu đãi siêu hời! Cảm ơn bạn đã luôn đồng hành cùng máy chủ. 🎁</p>
+                </div>
+            </div>
+
+            <!-- Tin 2 -->
+            <div class="news">
+                <div class="newsTitle">
+                    <div class="newsIcon"><img src="img/new.png" alt=""></div>
+                    <h1>MÙA MỚI - SỰ KIỆN VÀ CẬP NHẬT MỚI</h1>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="barTwo"></div>
+                <div class="newsDescription">
+                    <p>🌟 Chào mừng đến với mùa chơi mới! Với mùa này, chúng tôi mang đến rất nhiều cập nhật hấp dẫn và sự kiện đặc biệt để bạn khám phá.</p>
+                    <br>
+                    <img src="https://img.wallpapersafari.com/desktop/1920/1080/5/86/YWZEqj.jpg" alt="Update background">
+                    <br>
+                    <p>🆕 Danh sách cập nhật gồm có:
+                        <ul>
+                            <li>Hệ thống điểm kinh nghiệm mới</li>
+                            <li>Bảng xếp hạng PvP và mini-game</li>
+                            <li>Skin mùa đông độc quyền</li>
+                            <li>Vật phẩm mới và nâng cấp enchant</li>
+                        </ul>
+                    </p>
+                    <p>Tham gia ngay để không bỏ lỡ phần thưởng giới hạn và các thử thách thú vị nhé!</p>
+                </div>
+            </div>
+
+            <!-- Tin 3 -->
+            <div class="news">
+                <div class="newsTitle">
+                    <div class="newsIcon"><img src="img/swords.png" alt=""></div>
+                    <h1>ĐẤU TRƯỜNG MỚI RA MẮT!</h1>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="barTwo"></div>
+                <div class="newsDescription">
+                    <p>🏟️ Bạn đã sẵn sàng chiến chưa? Đấu trường mới với thiết kế hoành tráng và chiến trường cân bằng đã được ra mắt!</p>
+                    <br>
+                    <img src="https://www.teahub.io/photos/full/208-2086731_minecraft.jpg" alt="New Arena">
+                    <br>
+                    <p>⚔️ Hãy tụ tập team, khiêu chiến bang hội khác, hoặc tham gia solo để khẳng định đẳng cấp! Quà thưởng đặc biệt đang chờ đón người chiến thắng.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Phân trang -->
+        <nav class="nextPage">
+            <ul>
+                <span>Trang:</span>
+                <li><a style="color: black;" href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">...</a></li>
+            </ul>
+        </nav>
+
+        <div class="clear"></div>
+        <footer>
+            <p>© Bản quyền thuộc về chúng tôi.</p>
+            <p>Website được phát triển bởi <a href="https://github.com/Tiagox42"><strong>Tiagox42</strong></a> / Doritoz#2416</p>
+        </footer>
+    </div>
+</body>
+
+</html>
