@@ -40,12 +40,12 @@ window.onload = function () {
     //--------------------------------------------------------
 
     // Liên kết mạng xã hội / ảnh banner mạng xã hội
-    var urlFacebook = "https://github.com/Tiagox42";
-    var urlTwiiter = "https://github.com/Tiagox42";
-    var urlInstagram = "https://www.instagram.com/tdantas42/";
-    var urlYoutube = "https://www.youtube.com/user/Tg42x/videos";
+    var urlFacebook = "https://github.com/arnsensei";
+    var urlTwiiter = "https://github.com/arnsensei";
+    var urlInstagram = "https://github.com/arnsensei";
+    var urlYoutube = "https://github.com/arnsensei";
     var discordInvite = "https://discord.gg/xVK9AhvHcg";
-    var bannerSocialImage = "https://i.imgur.com/oSbKvAT.png";
+    var bannerSocialImage = "https://m.gettywallpapers.com/wp-content/uploads/2020/07/Minecraft-Wallapper-For-PC.jpg";
 
 
     //------------------ KHÔNG CHỈNH SỬA DƯỚI ĐÂY ------------------
