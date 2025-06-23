@@ -15,13 +15,13 @@ window.onload = function () {
     //--------------- Bộ sưu tập trang chủ ---------------
     // Dòng chữ và ảnh đầu tiên
     var text_Gfirst = 'Vật phẩm đặc biệt';
-    var image_Gfirst = 'https://i.imgur.com/OkfQb7q.png';
+    var image_Gfirst = 'https://w0.peakpx.com/wallpaper/765/36/HD-wallpaper-best-minecraft-and-mobile-pro-game-guides-minecraft-animation.jpg';
     // Dòng chữ và ảnh thứ hai
     var text_Gsecond = 'Nền kinh tế';
-    var image_Gsecond = 'https://i.imgur.com/XU4KHgV.png';
+    var image_Gsecond = 'https://c4.wallpaperflare.com/wallpaper/1010/613/78/minecraft-minecraft-dungeons-minecraft-the-end-enderman-minecraft-4k-hd-wallpaper-preview.jpg';
     // Dòng chữ và ảnh thứ ba
     var text_Gtrird = 'Cộng đồng tuyệt vời';
-    var image_Gtrird = 'https://i.imgur.com/7JP74WT.png';
+    var image_Gtrird = 'https://www.chromethemer.com/wallpapers/chromebook-wallpapers/images/960/minecraft-chromebook-wallpaper.jpg';
     //----------------------------------------------------
 
     // Loại server (FullPVP, MiniGame, Sinh tồn, v.v.)
