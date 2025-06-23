@@ -32,7 +32,7 @@ window.onload = function () {
     var firstPlayerName = 'ArnSenpaii';
     var firstPlayerComment = "Server siêu đỉnh, chơi vui và admin luôn hỗ trợ cực nhiệt tình!";
     // Tên và bình luận của người chơi thứ hai
-    var secondPlayerName = 'Tester';
+    var secondPlayerName = 'Fur';
     var secondPlayerComment = "Vui nè, dễ thương nè, ngầu nữa. Bạn bè tui chơi hết ở đây, lập clan thôi!";
     // Tên và bình luận của người chơi thứ ba
     var trirdPlayerName = 'Notch';
