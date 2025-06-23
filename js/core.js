@@ -10,7 +10,7 @@ window.onload = function () {
     var serverIpPort = 25165;
 
     // Ảnh banner đầu trang (dạng URL)
-    var bannerTop = 'https://i.imgur.com/k0MtSCb.png';
+    var bannerTop = 'https://media.peoplemaking.games/media_attachments/files/111/382/957/333/089/970/original/c213eee2b3dd6fdf.png';
 
     //--------------- Bộ sưu tập trang chủ ---------------
     // Dòng chữ và ảnh đầu tiên
